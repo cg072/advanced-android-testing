@@ -1,12 +1,12 @@
 buildscript {
-    ext.kotlinVersion = '1.5.31'
+    ext.kotlinVersion = '1.6.21'
     ext.navigationVersion = '2.3.5'
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath 'com.android.tools.build:gradle:7.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
 
@@ -49,7 +49,7 @@ ext {
     materialVersion = '1.4.0'
     recyclerViewVersion = '1.2.1'
     robolectricVersion = '4.5.1'
-    roomVersion = '2.3.0'
+    roomVersion = '2.4.0'
     rulesVersion = '1.0.1'
     swipeRefreshLayoutVersion = '1.1.0'
     timberVersion = '4.7.1'
