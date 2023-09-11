@@ -52,10 +52,9 @@ class StatisticsViewModel(application: Application) : AndroidViewModel(applicati
     val empty: LiveData<Boolean> = tasks.map { (it as? Success)?.data.isNullOrEmpty() }
 
     fun refresh() {
-        _dataLoading.value = true
-            viewModelScope.launch {
-                tasksRepository.refreshTasks()
-                _dataLoading.value = false
-            }
+        viewModelScope.launch {
+            tasksRepository.refreshTasks()
+            _dataLoading.value = false
+        }
     }
 }
